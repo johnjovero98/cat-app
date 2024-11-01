@@ -1,1 +1,1 @@
-live url: **https://cat-almanac.vercel.app/cats**
+live url: **https://cat-almanac.vercel.app/**
