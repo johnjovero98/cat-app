@@ -29,7 +29,7 @@ export default function Navbar() {
           <li><a href="/cats">Cat Breeds</a></li>
         </ul>
       </div>
-      <a className="btn btn-ghost text-xl" href="/">The Cat App</a>
+      <a className="btn btn-ghost text-xl" href="/">The Cat Almanac</a>
     </div>
 
     {/* navigation desktop */}
