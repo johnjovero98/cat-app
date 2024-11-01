@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar"
 import CatCards from "@/components/CatCards"
 import { getData } from "@/pages/api/http"
-import Footer from "@/components/footer"
+import Footer from "@/components/Footer"
 
 const BASE_URL = `https://api.thecatapi.com/v1/`
 export async function getServerSideProps() {

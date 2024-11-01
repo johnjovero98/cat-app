@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import CatDetails from "@/components/CatDetails";
-import Footer from "@/components/footer";
+import Footer from "@/components/Footer";
 import { getData } from "@/pages/api/http";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
