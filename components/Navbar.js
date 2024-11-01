@@ -6,7 +6,7 @@ export default function Navbar() {
     setIsOpen(!isOpen)
   }
   
-  return <div className="navbar bg-base-100">
+  return <div className="navbar">
     {/* navigation mobile */}
     <div className="navbar-start">
       <div className="dropdown">

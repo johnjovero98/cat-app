@@ -1,12 +1,18 @@
+import Image from "next/image"
+
+
 export default function CatCards({ cats }) {
     return <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {cats.map((cat) => {
             return <div key={cat.id} className="card card-compact bg-base-100 shadow-xl">
                 <figure>
-                    <img
+                    <Image
+                        width={500}
+                        height={500}
+                        quality={75}
                         className="aspect-[4/3] object-cover object-top"
                         src={
-                            !cat.hasOwnProperty('reference_image_id') || cat.reference_image_id === 'O3btzLlsO' || cat.reference_image_id === '4RzEwvyzz'||  cat.reference_image_id === 'DbwiefiaY'
+                            !cat.hasOwnProperty('reference_image_id') || cat.reference_image_id === 'O3btzLlsO' || cat.reference_image_id === '4RzEwvyzz' || cat.reference_image_id === 'DbwiefiaY'
                                 ?
                                 "/img/placeholder.png"
                                 :
