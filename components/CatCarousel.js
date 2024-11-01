@@ -5,7 +5,7 @@ export default function CatCarousel({ catImagesList }) {
         <div className="carousel w-full">
             {
                 catImagesList.map((image) => {
-                    return <div id={image.id} className="carousel-item w-full">
+                    return <div id={image.id} className="carousel-item justify-center w-full">
                         <Image
                             width={500}
                             height={500}

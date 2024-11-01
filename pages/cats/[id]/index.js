@@ -26,9 +26,11 @@ export default function CatDetailPage() {
     return (
         <>
             <Navbar />
-            <main className="container mx-auto p-8">
-                <CatDetails details={catDetails} />
-            </main>
+            <div className="bg-white">
+                <main className="container mx-auto p-8">
+                    <CatDetails details={catDetails} />
+                </main>
+            </div>
             <Footer/>
         </>
     );

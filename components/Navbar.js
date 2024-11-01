@@ -6,7 +6,7 @@ export default function Navbar() {
     setIsOpen(!isOpen)
   }
   
-  return <div className="navbar">
+  return <div className="navbar bg-white">
     {/* navigation mobile */}
     <div className="navbar-start">
       <div className="dropdown">
@@ -24,9 +24,9 @@ export default function Navbar() {
 
         <ul
           tabIndex={0}
-          className={`${ isOpen ? "block" : "hidden" } menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow`}>
-          <li><a href="/">Home</a></li>
-          <li><a href="/cats">Cat Breeds</a></li>
+          className={`${ isOpen ? "block" : "hidden" } menu menu-lg dropdown-content bg-white rounded-box z-[1] mt-3 w-72 p-3 shadow`}>
+          <li className="py-2"><a className="text-nowrap" href="/">Home</a></li>
+          <li className="py-2"><a className="text-nowrap" href="/cats">Cat Breeds</a></li>
         </ul>
       </div>
       <a className="btn btn-ghost text-xl" href="/">The Cat Almanac</a>
