@@ -9,7 +9,7 @@ export default function CatCarousel({ catImagesList }) {
                         <Image
                             width={500}
                             height={500}
-                            quality={75}
+                            quality={50}
                             key={image.id}
                             src={image.url}
                             className="aspect-[4/3] object-contain"

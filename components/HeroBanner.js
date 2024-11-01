@@ -7,6 +7,7 @@ export default function HeroBanner() {
                 src="/img/bongo-cat.gif"
                 width={500}
                 height={500}
+                quality={100}
                 className="m-8"
                 alt="hero banner gif of bongo cat"
             />

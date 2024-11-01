@@ -9,7 +9,7 @@ export default function CatCards({ cats }) {
                     <Image
                         width={500}
                         height={500}
-                        quality={75}
+                        quality={25}
                         className="aspect-[4/3] object-cover object-top"
                         src={
                             !cat.hasOwnProperty('reference_image_id') || cat.reference_image_id === 'O3btzLlsO' || cat.reference_image_id === '4RzEwvyzz' || cat.reference_image_id === 'DbwiefiaY'
