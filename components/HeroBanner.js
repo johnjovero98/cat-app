@@ -1,13 +1,13 @@
 import Image from "next/image"
 
 export default function HeroBanner() {
-    return <div class="hero bg-base-200 min-h-screen">
+    return <div class="hero bg-white min-h-screen">
         <div class="hero-content flex-col lg:flex-row">
             <Image
-                src="/img/cat.jpg"
+                src="/img/bongo-cat.gif"
                 width={500}
                 height={500}
-                className="rounded-full shadow-xl m-8"
+                className="m-8"
             />
             <div>
                 <h2 class="text-5xl font-bold">Purrfection Awaits!</h2>
