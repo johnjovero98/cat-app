@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar"
 import CatCards from "@/components/CatCards"
 import { getData } from "@/pages/api/http"
+import Footer from "@/components/footer"
 
 const BASE_URL = `https://api.thecatapi.com/v1/`
 export async function getServerSideProps() {
@@ -17,6 +18,7 @@ export default function CatBreeds({ catBreeds }) {
         <main className="container mx-auto p-8">
             <CatCards cats={catBreeds} />
         </main>
+        <Footer/>
     </>
 
 }

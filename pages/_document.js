@@ -5,6 +5,7 @@ export default function Document() {
     <Html lang="en" data-theme="cupcake">
       <Head />
       <body className="antialiased">
+        
         <Main />
         <NextScript />
       </body>

@@ -1,10 +1,31 @@
+import { getData } from "@/pages/api/http";
 import CatCarousel from "./CatCarousel"
+import { useState, useEffect } from "react";
 
 export default function CatDetails({ details }) {
+
+    const [catImages, setCatImages] = useState([])
+
+    const catID = details.id
+
+    const BASE_URL = `https://api.thecatapi.com/v1/`;
+    useEffect(()=>{
+        const getCatImages = async () => {
+            if(catID){
+                const urlQuery = `${BASE_URL}images/search?limit=10&breed_ids=${catID}`
+                const catImages = await getData(urlQuery)
+                setCatImages(catImages)
+                
+            }
+        }
+        getCatImages()
+    },[catID])
+    
     return <>
         <div className="grid md:grid-cols-2 gap-8">
             <div >
-                <CatCarousel /> 
+                {/* pass an array here */}
+                <CatCarousel catImagesList={catImages}/> 
             </div>
 
             <div>

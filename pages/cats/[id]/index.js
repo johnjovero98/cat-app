@@ -1,8 +1,10 @@
 import Navbar from "@/components/Navbar";
 import CatDetails from "@/components/CatDetails";
+import Footer from "@/components/footer";
 import { getData } from "@/pages/api/http";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
+
 
 export default function CatDetailPage() {
     const [catDetails, setCatDetails] = useState({});
@@ -27,6 +29,7 @@ export default function CatDetailPage() {
             <main className="container mx-auto p-8">
                 <CatDetails details={catDetails} />
             </main>
+            <Footer/>
         </>
     );
 }
